@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3- animation </title>
+<meta charset="utf-8">	
+</head>
+<style type="text/css">
+@-webkit-keyframes loops{
+	            0% {
+                background:url(http://g.hiphotos.baidu.com/zhidao/pic/item/b3fb43166d224f4a36435b2a0ff790529822d134.jpg) no-repeat;             
+            }
+            25% {
+                background:url(http://img5.duitang.com/uploads/item/201410/15/20141015212007_xhUYU.jpeg) no-repeat;
+            }
+            50% {
+                background:url(http://img0.imgtn.bdimg.com/it/u=2451542663,855678437&fm=21&gp=0.jpg) no-repeat;
+            }
+            75% {
+                background:url(http://img5q.duitang.com/uploads/item/201410/02/20141002231029_LMASH.jpeg) no-repeat;
+            }
+            100% {
+                background:url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb239ceb0fb43161a1f7b7a10a54642/3b87e950352ac65ce2e73f76f9f2b21192138ad1.jpg) no-repeat;
+            }
+}
+.box{
+	margin:50px auto;
+	box-shadow:0 0 5px rgba(0,0,0,1);
+	position: relative;
+	width: 480px;
+	height: 430px;
+
+	background-position: center;
+  -webkit-animation-name: "loops";
+  -webkit-animation-duration:20s;
+	-webkit-animation-iteration-count: infinite;
+
+
+}				
+</style>
+<body>
+<div class="box"></div>
+</body>
+</html>
